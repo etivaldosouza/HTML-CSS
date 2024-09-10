@@ -1,0 +1,50 @@
+@charset "UTF*";
+
+/*
+    em HTML é id = em CSS é #(só pode um elemento por documento,página) 
+    em HTML é class = em CSS é . (pode vários elemento)
+*/
+
+body {
+    background-color: #8FE7AA;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    color:#03290B
+}
+
+/* pode usar o h1 ou ñ antes( #principal ou h1#principal) */
+
+h1#principal { /* posso usar sem o elemento. apena com a serquilha(ex: #principal)*/
+    text-align: center;
+    background-color: #3B5F46;
+    color: white;
+
+}
+
+h2 {
+    color:rgb(4, 109, 0);
+}
+
+.basico {
+    color:#034701;
+    font-weight: bolder; /* NEGRITO
+    
+    */
+    
+}
+
+.intermediario {
+    color: #8a8100;
+}
+
+.avancado {
+    color: #8a1500;
+    font-weight: bolder;
+}
+
+.destaque {
+    background-color: #a0950063;
+}

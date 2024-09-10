@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor.</p>
+    
+
+    <video src="midias/meu-video.webm" width="560" poster="imagens/capa.png" controls loop></video>
+    <!--poster serve para quando terminar o video parar na capa que foi criado e incluido na pastas imagens-->
+    
+    <!-- essa forma de utilizar a tag videos tem o problema de aumento de trafego de dados e aumento do consumo de banda oq vai gerar um custo elevado para o cliente do site-->
+
+    <!--SOLUÇÃO PARA O PROBLEMA ANTERIOR-->
+    
+    <h1>Inserindo videos do youtube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nxH3D8tGmx8?si=dAp2s_Hre7b0sibU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </html>

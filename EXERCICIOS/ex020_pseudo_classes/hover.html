@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div > p { /* esta config esconde o paragro filho da div*/
+            display: none;
+        }
+
+        div:hover > p {
+            display: block; /* mostra os paragrafos escondidos*/
+            color: white;
+            background-color: red;
+            width: 110px; /*largura da div*/
+            
+        }
+
+        div:hover {
+            color:blue;
+            font-weight: bolder; /* negritar texto*/
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo:</p>
+    <div>
+        IMPRESSORAS...:
+        <p>EPSON L375</p>
+        <p>EPSON L220</p>
+        <p>HP DESKJET</p>
+        
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-Fonte / pré fomatação</h2>
+    
+    <p>O comando <code>document.getEtlementById('teste')</code> é escrito em linguagem Java Script.</p><!--para fontes monoespaçadas(deixar com mesma largura)-->
+    
+    <pre><!--para deixar o código identado na pagina-->
+        <code><!--para deixar mono espacadas,mesma larguras as letras e sinais-->
+        num = int(input('digite um número'))
+if num % 2 == 0:
+    print(' o número {} é par'.format(num))
+else:
+    print('o numero {} é impar'.format(num))
+print('fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citações simples</h2> <!--nao quebra linha para colocar a citação--> 
+<p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p><!--tag <q> coloca a aspas na citação-->
+
+    <h2>Citações completas</h2> <!--esta tag <blockquote> tem quebra de linha e deslocamento para o lado direito-->
+<p>Segundo jeff noble,no seu livro HTML para leigos:</p>
+<blockquote cite="https://leitura.com.br/html-xhtml-e-css-para-leigos-L022-9788576086970"><!--visualmete nada acontece é apenas para referenciar o mecanismo de busca do nosso site ou seja a parte interna vai saber quem é o dono da frase-->
+    a diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capitulo descrevem os blocos de texto.
+</blockquote> 
+
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style">CSS</abbr>.estou adorando!</p>
+
+<h2>Texto Invertido</h2>
+<p><bdo dir="rtl">estou aprendendo a criar coisas em html.</bdo></p><!--texto fica invertido-->
+<p><bdo dir="ltr">estou aprendendo a criar coisas em html.</bdo></p><!--texto fica normal-->
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        
+        /* SELETORES PERSONALISADOS:
+            # = id
+            . = class
+            : = pseudo-classe
+            :: pseudo-elemento
+            > = children (filho-p/ indicar aquilo dentro de algo)
+        */
+
+        
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: red;
+            text-decoration: none; /* tira o sublinhado do link*/
+            font-weight: bold;
+        }
+
+        a:visited {
+            color:darkred; /* fica vermelho escuro quando o link ja foi visitado*/
+        }
+
+        a:hover {         /* config.p/ quando passar o mouse em cima*/
+            color: blue;
+            text-decoration: underline; /*coloca o sublinhado*/
+        }
+
+        a:active {        /*config.p/ quando o link for clicado*/
+            
+            color:yellow
+        }
+        
+        /*representação p/pseudoelemento*/
+        
+        a::before {            /*config.p/antes do link*/
+            content:'\002620  '; /*imagem tirada do site erikasarti*/
+            font-weight: 200; /*tira o negritado do simbolo*/
+        }
+        
+        a::after { /*colocar identificação q é link depois de todos links */
+            content: ' [ link ]'; /* pode escrever qualquer coisa*/
+            font-weight: normal; /* tira negrito*/
+            color: darkgrey;
+            
+        }
+        .especial {
+            background-color: aqua; /*criei uma classe para o link do youtube*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://estacio.br/" target="_blank">estácio</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site Curso em Vídeo</a></li>
+        <li><a href="https://ge.globo.com/pe/" target="_blank">globo esporte-pe</a></li>
+    </ul>
+</body>
+</html>

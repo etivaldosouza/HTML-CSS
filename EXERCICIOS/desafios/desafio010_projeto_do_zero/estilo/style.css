@@ -112,7 +112,7 @@ nav > a:hover {
 
 main {
 
-    min-width: 300px; 
+    min-width: 300px; /*largarua minima de um celular*/
     max-width: 1000px;
     margin: auto; /*para quando for p/tela grande a img ficar centralizada e nao aumentar*/
     margin-bottom: 30px; /*para da uma separar o conteudo principal do rodapé*/

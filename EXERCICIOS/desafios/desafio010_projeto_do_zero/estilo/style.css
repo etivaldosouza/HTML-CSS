@@ -47,7 +47,7 @@ body {
     font-family: var(--font-padrao);
 }
 
-a.externo::after {
+a.externo::after { /*todo link da classe externo,depois dele eu coloco...*/
     content: '\00A0🔗';/*codigo p/dá um espaço antes do simbolo do link*/
 }
 

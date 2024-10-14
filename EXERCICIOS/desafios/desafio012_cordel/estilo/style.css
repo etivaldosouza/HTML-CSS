@@ -1,1 +1,71 @@
 @charset "UTF-8";
+
+/*
+    PASSO 1: CRIANDO CONFIG. GERAIS PARA RESETAR OS ELEMENTOS
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color:black;
+    color: white;
+    text-align: center;
+    line-height:2.5em; /*espaçamento entre linhas*/
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /*transf todas as ltras em letras de forma c/ a primeira letra de cada palavra maiucula*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}

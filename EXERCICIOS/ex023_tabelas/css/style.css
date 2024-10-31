@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse; /*JUNTA AS CÉLULAS*/
+    margin: 20px;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+td,th {
+
+    border: 1px solid black; /*BORDA*/
+    padding: 10px;    
+}
+
+/* APLINADO EFEITO ZEBRADO
+
+    tbody > tr:nth-child(2n) 
+    background-color: lightgrey;
+    }
+*/
+
+/*(no lugar do 2n posso usar odd(impar ou even(par)*/
+
+tbody > tr:nth-child(odd) {
+    background-color: aqua;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: yellow;
+}
+   
+
+thead,tfoot {
+    background-color:rgba(0, 0, 0, 0.856);
+    color: white;
+}
+
+td.num {
+    text-align: right;
+}

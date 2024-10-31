@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
@@ -11,6 +12,7 @@
         ANATOMIA PARA TABELAS GRANDES
 
         <table>
+            <caption> # LEGENDA DA TABELA
             <thead> # CABEÇA DA TABELA
                 tr,td,th
             <tbody> # CORPO DA TABELA
@@ -20,19 +22,85 @@
     -->
 
     <table>
-        <thead>
+
+        <caption>População das Unidades Federativa</caption>
+        <thead> <!--CABEÇA-->
             <tr>
-                <th>
-                    ESTADO
-                </th>
+                <!--TÍTULO-->
+                <th scope="col">Estado</th> <!--TITULOS DE COLUNA-->
+                <th scope="col" style="width:50px;">População</th> <!--configurando de modo pontual a largura da coluna e agora a coluna da tabela passa a ter 450px referente a coluna estados e 50px da populaçao totalizando o valor de 500px que foi o informado para toda a table-->                  
+            </tr>
+        </thead>
+
+        <tbody><!--CORPO DA TABELA-->
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
             </tr>
 
-        </thead>
-        <tbody>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">95.557.071</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.484.127</td>
+            </tr>
+            
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.018.354</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.144.597</td>
+            </tr>
 
         </tbody>
-        <tfoot>
 
+        <tfoot><!--RODAPÉ-->
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--TITULO DE LINHA-->
+                <td class="num"><strong>212.147.125</strong></td>
+            </tr>
         </tfoot>
 
     </table>

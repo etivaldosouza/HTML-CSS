@@ -4,85 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesclando Células</title>
+
     <style>
 
         body {
-            padding-left: 20px;
-        }
-
-        caption{
-            font-size: 1.5em;
-            margin: 0px;
-            background-color: aqua;
-            border: 1px solid black;
-            box-shadow: 1px 1px 1px black;
+            padding: 10px;
         }
         table {
-           width: 500px;
-           border-collapse: collapse;
+            width: 500px;
+            
+            
         }
+        caption {
+            background-color: lightgray;
+            width: 500px;
+            height: 30px;
+            padding-top: 15px;
+            font-weight: bold;
+        }
+
         th {
             border: 1px solid black;
             padding: 10px;
-            background-color: lightgrey;
+            background-color: black;
+            color: white;
         }
+
         td {
             border: 1px solid black;
             text-align: center;
-            padding: 10px
+            padding: 10px;
         }
-        h1 {
-            margin:30px;
-            padding-left:150px;
 
+        h1 {
+            padding-left: 150px;
+        }
+
+        tfoot {
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Desafio 01</h1>
+    <h1>Desafio 13</h1>
 
     <table>
-        <caption>TABELA COM MESCLAGEM DE CÉLULAS</caption>
-        <tr>
+        <caption>DESAFIO PARTE 01 DO CAPÍTULO 21 AULA 9</caption>
+        <thead>
             <th>A</th>
             <th>B</th>
             <th>C</th>
             <th>D</th>
-        </tr> 
-
-        <tr>
+        </thead>
+        
+        <tbody>
+            <tr>
                 <td>1</td>
                 <td>2</td>
                 <td rowspan="2">3</td>
-                <td>4</td>
-        </tr>
+                <td>4</td>    
+            </tr>
 
-        <tr>
+            <tr>
                 <td>5</td>
                 <td>6</td>
                 <td>7</td>
+            </tr>
 
-        </tr>
-        <tr>
-            <td colspan="3">8</td>
-            <td>9</td>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
             
-        </tr>
-        
-        <tr>
-            <td rowspan="2">10</td>
-            <td colspan="2">11</td>
-            <td>12</td>
-            
-            
-        </tr>
-        <tr>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-        </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="4">Power by Etivaldo carlos</th>
+        </tfoot>
+
+
 
     </table>
-    
+
 </body>
 </html>

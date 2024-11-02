@@ -14,6 +14,11 @@ table {
     width: 500px;
     border-collapse: collapse; /*JUNTA AS CÉLULAS*/
     margin: 20px;
+    position: relative; /*INF.NESC.P/ FIXAR O THEAD(PARA TABELAS GRANDES
+    
+    
+    
+    */
 }
 
 caption {
@@ -46,9 +51,16 @@ tbody > tr:nth-child(even) {
     background-color: yellow;
 }
    
+thead > tr > th { /*PARA FIXAR O CABEÇALHO DA TABELA*/
+    position: sticky;
+    top: -1px;
+    background-color:rgba(0, 0, 0, 0.966);
+
+
+}
 
 thead,tfoot {
-    background-color:rgba(0, 0, 0, 0.856);
+    background-color:rgba(0, 0, 0, 0.966);
     color: white;
 }
 

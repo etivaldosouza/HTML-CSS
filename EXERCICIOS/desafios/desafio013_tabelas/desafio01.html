@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclando Células</title>
+    <style>
+
+        body {
+            padding-left: 20px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            margin: 0px;
+            background-color: aqua;
+            border: 1px solid black;
+            box-shadow: 1px 1px 1px black;
+        }
+        table {
+           width: 500px;
+           border-collapse: collapse;
+        }
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px
+        }
+        h1 {
+            margin:30px;
+            padding-left:150px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio 01</h1>
+
+    <table>
+        <caption>TABELA COM MESCLAGEM DE CÉLULAS</caption>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+        </tr> 
+
+        <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+        </tr>
+
+        <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+            
+        </tr>
+        
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+            
+            
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>

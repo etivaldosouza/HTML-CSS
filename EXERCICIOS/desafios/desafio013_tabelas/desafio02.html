@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO PARTE 2</title>
+    <style>
+        
+        body{
+            background-color: rgba(137, 43, 226, 0.63);
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            
+        }
+
+        h1 {
+            text-align: center;
+            margin: 50px;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.87);
+            color: white;
+            border: 1px solid black;
+            padding: 5px 5px 0px 5px;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px 5px 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Desafio Parte 2</h1>     
+    <table>
+        <thead>
+            <th scope="col">A</th> <!--util p/ o mecanismo de buscas como o google visualmente ñ muda nada mas é sempre importante usar tando para titulos de coluna quando para titulos de linha  row-->
+            <th scope="col">B</th>
+            <th scope="col">C</th>
+            <th scope="col">D</th>
+            <th scope="col">E</th>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="5">B</td>
+            </tr>
+            <tr>
+                <td rowspan="5">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                
+                
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+        </tbody>
+    </table>         
+</body>
+</html>

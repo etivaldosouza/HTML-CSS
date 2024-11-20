@@ -4,18 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe</title>
+
+    <style>
+
+        
+        p > iframe {
+
+            border: 1px dashed red;
+        }
+
+        div >  iframe {
+
+            width: 300px;
+            display: block;
+            margin: auto;
+        }
+             
+    </style>
 </head>
 <body>
     <h1>Iframes</h1>
     <p>exitem sites e navegadores que não são compativeis com Iframe, para isso colocamos um link para o site caso o iframe não funcione.</p>
+
     <p>
-       <iframe src="https://estudante.estacio.br/" frameborder="0" width="300" height="600">
-            <a href="http://https://estudante.estacio.br/">estacio</a>
+       <iframe src="https://estudante.estacio.br/" frameborder="1" width="300" height="600">
+            <a href="http://https://estudante.estacio.br/" target="_blank">estacio</a>
        </iframe>
-
-
-        
     </p>
-   
+
+    <div class="01">
+
+        <iframe src="pag001.html" frameborder="0" width="500" height="500">
+            <p>Infelizmente seu navegador ñ é compativel com Iframe</p> <!--sempre colocar uma mensagem de erro para caso ñ seja compativel-->
+        </iframe> <!--APESAR DAS CONFIG. DE LARG E ALT COLOCADA AQUI PREVALESCE AS QUE FOREM COLOCADAS NO STYLE-->
+
+    </div>
+
+
 </body>
 </html>

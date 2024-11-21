@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso de Iframe</title>
+    <title>USANDO O srcdoc</title>
 
     <style>
         body {
@@ -14,12 +14,14 @@
             display: block;
             margin: auto;
             
-            width: 40vw; /*vai ocupar 95% da tela*/
+            width: 95vw; /*vai ocupar 95% da tela*/
             height: 400px;
             border: 2px solid black;
         }
     </style>
+
 </head>
+
 <body>
     <h1>Faça uma Escolha</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit cupiditate similique iure porro. Inventore sequi eos nostrum quibusdam dolores amet quis dicta. Eveniet fugiat, earum quam adipisci ut voluptatibus ipsum?</p>
@@ -33,10 +35,11 @@
     
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque debitis molestias enim quod molestiae illum numquam reprehenderit fugiat sunt unde eos delectus, magni alias possimus, dolor, itaque optio consequatur culpa Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, fugiat obcaecati. Numquam cumque, optio nostrum, modi facere eligendi distinctio tenetur explicabo, debitis id totam! Amet nulla neque mollitia sequi quo?</p>
 
-    <iframe name="frame" src=" "> <!--chama o parametro name e dá um nome. esse modo faz a pagina do link acima ocupar apenas o espaço do Iframe e ñ a pagina toda. Obs o src está vazio e por isso a tela do iframe está vazia mas posso escolher uma das páginas e deixar nele.-->
+    <iframe name="frame" srcdoc="<h1>ESCOLHA UMA DAS OPÇÕES ACIMA</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, asperiores temporibus reiciendis minima sed incidunt. Quia a illo dolor dignissimos ipsum quis voluptas quaerat deleniti id, maxime numquam. Tempora, quam.</p>"> <!--USO O PARAMETRO srcdoc para adicionar o conteudo que eu quiser-->
         <p>Infelizmente seu navegador não é compativel com isso</p>
     </iframe>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aperiam voluptate perspiciatis deserunt quia exercitationem mollitia repellendus vero commodi illo? Architecto recusandae eaque laborum voluptas quidem soluta in porro magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis libero repellat a eos rerum doloremque deserunt ex vitae, accusamus impedit ipsam enim magni pariatur, harum velit! Quis, error qui.</p>
+
 </body>
 </html>

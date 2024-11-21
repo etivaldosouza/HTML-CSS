@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+</head>
+<body>
+    <h1>Bloquando scripts</h1>
+    
+    <p>scripts quando é de uma pagina minha tudo bem pq é confiavel mas scripts de outro site pode ser maliciosos entao usamos a configuração abaixo para bloquear scripts</p>
+
+
+    <!--CONFIGURAÇÕES P/ DEIXAR TODAS AS AÇOES DO SITE DENTRO DO IFRAME BLOQUEADA-->
+    <iframe src="paginas_extras/pag005.html" referrerpolicy="no-referrer" sandbox="sandbox">
+
+        <p>seu navegador ñ é compativel com isso...</p>
+        
+    </iframe>
+
+    <!--CONFIGURAÇÕES P/ LIBERAR APENAS (scripts) MANTENDO O BLOQUEIO / OUTRAS AÇOES DO SITE DENTRO DO IFRAME-->
+    <iframe src="paginas_extras/pag005.html" referrerpolicy="no-referrer" sandbox="allow-scripts">
+
+
+    </iframe>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequatur totam fugiat hic doloribus dolore magni reprehenderit, fugit similique cum distinctio sapiente vero ex neque et, labore temporibus illo velit.</p>
+</body>
+</html>

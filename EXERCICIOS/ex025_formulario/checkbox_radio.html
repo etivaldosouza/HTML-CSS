@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+
+    <style>
+        .sexo {
+            width: 300px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <fieldset class="sexo">
+
+            <legend>Sexo</legend>
+            <!--NOS BOTÕES DE RÁDIO SÓ PODE ESCOLHER APENAS UMA OPÇÃO E ELES TEM QUE TER O MESMO 'name' para os dois input-->
+
+            <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+            
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Espotes Fvoritos</legend> 
+            
+            <!--
+                O <label> AJUDA A AUMENTAR O CAMPO DE SENSIBILIDADE(TOQUE) UTIL PRINCIPALMENTE PARA O USUARIO DE CELULAR OBS ABAIXO EXEMP COM E SEM O label
+            -->
+            <p>exemplos abaixos com uso do label e sem label</p>
+
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esnat" id="iesnat">Natação<br>
+            <input type="checkbox" name="esten" id="iesten">Tenis
+            
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>

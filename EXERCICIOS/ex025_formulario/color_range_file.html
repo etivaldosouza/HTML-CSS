@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formuláro</title>
+
+    <style>
+        #idisplay {
+            display: grid;           
+            border:none;
+
+        }
+        #inivel {
+            display: grid;
+            margin-top: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Elemento Color</h1>
+
+    <form action="cadastro.php" method="post"> 
+
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="Cor" id="icor" value="#00ff00"> <!--adicionando uma cor de preferência como padrão através do value e o cód hex da cor desejada-->
+        </p>
+
+        <p> <!--range p/ nível de satisfação-->
+            
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" oninput="display.value=value" onchange="display.value" min="0" max="10" step="1" value="5"> <!-- step é p/ dizer de quanto em quanto vai variar o valor e o value é p/ determinar o padrão de onde o marcador vai ficar como padão fixo-->
+            <input type="text" name="display" id="idisplay" value="0" readonly>
+        </p>
+        
+        
+
+        <h1>Elemento file</h1>
+        
+        <p>
+            no caso do file o método a ser usado tem que ser o post
+
+        </p>
+
+        <p>
+
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

@@ -14,6 +14,7 @@
         #inivel {
             display: grid;
             margin-top: 20px;
+            
         }
 
         
@@ -32,11 +33,9 @@
         <p> <!--range p/ nível de satisfação-->
             
             <label for="inivel">Nivel de Satisfação</label>
-            <input type="range" name="nivel" id="inivel" oninput="display.value=value" onchange="display.value" min="0" max="10" step="1" value="5"> <!-- step é p/ dizer de quanto em quanto vai variar o valor e o value é p/ determinar o padrão de onde o marcador vai ficar como padão fixo-->
-            <input type="text" name="display" id="idisplay" value="0" readonly>
-        </p>
-        
-        
+            <input type="range" name="nivel" id="inivel" oninput="display.value=value" onchange="display.value" min="0" max="10" step="1" value="3"> <!-- step é p/ dizer de quanto em quanto vai variar o valor e o value é p/ determinar o padrão de onde o marcador vai ficar como padão fixo-->
+            <input type="text" name="display" id="idisplay" value="10" readonly style="color: brown; font-weight: bolder; font-size: large;margin-left: 110px;">
+        </p>     
 
         <h1>Elemento file</h1>
         
@@ -45,9 +44,15 @@
 
         </p>
 
+        <!--
+
+            ADICIONANDO ARQUIVO OU FOTO: PARA ESSE CONTROLE DEVEMOS USAR O MÉTODO POST
+        
+        -->
+
         <p>
 
-            <label for="ifoto">Foto do Perfil</label>
+            <label for="ifoto">Foto do Perfil</label> 
             <input type="file" name="foto" id="ifoto">
 
         </p>

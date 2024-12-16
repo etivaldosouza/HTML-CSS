@@ -8,22 +8,14 @@
 <body>
     <h1>Exemplo de Formulário</h1>
 
-    <form action="cadastro.php" method="post
-    
-    
-    
-    " autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="on">
 
         <p>
             <label for="iest">Estado:</label>
             <select name="Estado" id="iest">
 
-                <option value="" select>--Escolha aqui--
-
-
-
-
-                </option> <!--select p/ deixar como padrão fixo na tela-->
+                <option value="" select>--Escolha aqui--</option> <!--select p/ deixar como padrão fixo na tela-->
+                
                 <optgroup label="Região Sudest">
 
                     <option value="MG">Minas Gerais</option>
@@ -41,6 +33,20 @@
                 </optgroup>
 
             </select>
+        </p>
+
+        <p>
+            <label for="prof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lsprof"> <!--acrescenta o list com o nome do id do datalist abaixo-->
+
+            <datalist id="lsprof"> <!--cria o id-->
+
+                <option value="Adm">Administrador</option> <!--posso deixar s/ o value.-->
+                <option value="Adv">Advogado</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Apos">Aposentado</option>
+
+            </datalist>
         </p>
 
         <p>

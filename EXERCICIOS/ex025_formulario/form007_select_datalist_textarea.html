@@ -8,13 +8,13 @@
 <body>
     <h1>Exemplo de Formulário</h1>
 
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
             <label for="iest">Estado:</label>
-            <select name="Estado" id="iest">
+            <select name="Estado" id="iest" required> <!--Ñ PERMITE PLACEHOLDER--> 
 
-                <option value="" select>--Escolha aqui--</option> <!--select p/ deixar como padrão fixo na tela-->
+                <option value="" select>--Escolha aqui--</option> <!--select p/ deixar como padrão fixo na tela--> <!--Ñ PERMITE PLACEHOLDER--> 
                 
                 <optgroup label="Região Sudest">
 
@@ -37,7 +37,7 @@
 
         <p>
             <label for="prof">Profissão</label>
-            <input type="text" name="prof" id="iprof" list="lsprof"> <!--acrescenta o list com o nome do id do datalist abaixo-->
+            <input type="text" name="prof" id="iprof" list="lsprof" required placeholder="   -- Escolha Aqui  --"> <!--acrescenta o list com o nome do id do datalist abaixo-->
 
             <datalist id="lsprof"> <!--cria o id-->
 
@@ -48,6 +48,13 @@
 
             </datalist>
         </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="Mensagem" id="imsg" cols="30" rows="10"></textarea> <!--AO USAR O TEXTAREA O MÉTODO A SER USADO DEVERÁ SER O POST P/ Ñ TER PROBLEMA DE LIMITAÇÃO DE BYTES QUE TEM NO GET QUE É APENAS DE 3000 BYTES NO POST Ñ TEM LIMITE-->
+
+        </p>
+
 
         <p>
             <input type="submit" value="Enviar">

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+
+    
+    <style>
+
+        #idisplay {
+            display: grid;           
+            border:none;
+
+        }
+        #inum {
+
+            display: grid;
+            margin-top: 20px;
+            
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="inum">Número:</label>
+            <input type="range" name="num" id="inum"oninput="display.value=value" onchange="display.value" min="0" max="10" step="1" value="0">
+            
+            <input type="text" name="display" id="idisplay" value="0" readonly style="color: brown;font-weight: bolder; font-size: large;margin-left: 110px;">
+         
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

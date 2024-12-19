@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculo de IMC</h1>
+
+        <div class="container">
+            <h1>Calculadora de IMC</h1>
+            <div class="input-group">
+                <label for="peso">Peso (kg)</label>
+                <input type="number" id="peso" placeholder="Ex: 70.5">
+            </div>
+            <div class="input-group">
+                <label for="altura">Altura (m)</label>
+                <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+            </div>
+            <button onclick="calcularIMC()">Calcular IMC</button>
+            <div id="resultado"></div>
+        </div>
+
+    <script>
+
+        function calcularIMC() {
+            const peso = parseFloat(document.getElementById('peso').value);
+            const altura = parseFloat(document.getElementById('altura').value);
+            const resultadoDiv = document.getElementById('resultado');
+        
+            if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
+                resultadoDiv.innerHTML = "Por favor, insira valores válidos.";
+                resultadoDiv.className = "";
+                resultadoDiv.style.display = "block";
+                resultadoDiv.style.backgroundColor = "#ff5252";
+                return;
+            }
+        
+            const imc = peso / (altura * altura);
+            let mensagem = `Seu IMC é ${imc.toFixed(1)} - `;
+            let classe = "";
+        
+            if (imc < 18.5) {
+                mensagem += "Abaixo do peso";
+                classe = "abaixo";
+            } else if (imc < 24.9) {
+                mensagem += "Peso normal";
+                classe = "normal";
+            } else if (imc < 29.9) {
+                mensagem += "Sobrepeso";
+                classe = "sobrepeso";
+            } else {
+                mensagem += "Obesidade";
+                classe = "obesidade";
+            }
+        
+            resultadoDiv.innerHTML = mensagem;
+            resultadoDiv.className = `${classe} animacao`;
+            resultadoDiv.style.display = "block";
+        }
+        
+        // Permitir o uso da tecla Enter para calcular
+        document.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                calcularIMC();
+            }
+        });
+        </script>
+</body>
+</html>
+
+

@@ -52,3 +52,26 @@ img#print {display: none;}
 img#pc {display: none;}
 img#tv {display: none;}
 
+
+/*TABLET*/
+@media screen and(min-width: 768px ) and(max-width:992px) {
+
+    body {
+      background-image: url(../imagens/back-tablet.jpg);
+    }  
+
+    img#phone {display: none;} 
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+
+}
+
+/*DESKTOP*/
+@media screen and(min-width:992px)and(max-width:1200px) {
+
+}
+
+/*GRANDES TELAS*/
+@media screen and(min-width:1200px)

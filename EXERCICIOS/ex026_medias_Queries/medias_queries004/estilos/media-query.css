@@ -13,9 +13,11 @@ Grandes telas: @media screen and (min-width: 1200px)
 */
 
 /* P/ IMPRESSÃO */
+
 @media print {
 
 }
+
 
  /*TABLET*/
 @media screen and(min-width: 768px ) and(max-width:992px) {

@@ -54,7 +54,7 @@ img#tv {display: none;}
 
 
 /*TABLET*/
-@media screen and(min-width:768px ) {
+@media screen and(max-width:768px ) {
     body {
         background:black url(../imagens/back-tablet.jpg);
       }  

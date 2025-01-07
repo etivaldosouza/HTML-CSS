@@ -22,8 +22,7 @@ body {
 
 body {
     background: black url(../imagens/back-phone.jpg) no-repeat;
-    background-size: cover; /* cobre a tela inteira*/
-    background-position: center center;
+    background-size:cover;
     
 
 }

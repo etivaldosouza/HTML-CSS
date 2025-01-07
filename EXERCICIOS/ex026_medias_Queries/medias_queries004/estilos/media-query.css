@@ -22,6 +22,7 @@ Grandes telas: @media screen and (min-width: 1200px)
     #phone {display: none;}
     #tablet {display: block;}
     #print {display: none;}
+    #pc {display: none;}
     #tv {display: none;}
 
 }

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+/* Typical Device Breakpoints 
+------------------------------
+Pequenas Telas: @media screen and (max-width: 600px) 
+Celular e tabletes modo retrato: @media screen and (min-width: 600px)
+Tablet paisagem: @media screen and (min-width: 768px)
+laptops/Desktop: @media screen and (min-width: 992px) 
+Grandes telas: @media screen and (min-width: 1200px)
+
+*/
+
+@media screen and (min-width:768px) {
+    .fa-solid {
+        display: none;
+    }
+    menu {
+        display: block !important; /* o !important fez com que o menu ficasse sempre visivel ao aumentar a tela oque ñ estava acontecendo*/
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+   
+    main {
+        width: 768px;
+    }
+}

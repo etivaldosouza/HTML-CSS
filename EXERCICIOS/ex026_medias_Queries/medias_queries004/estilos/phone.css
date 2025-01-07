@@ -16,8 +16,7 @@ html {
 }
 
 body {
-    background:black;
-    background-image: url(../imagens/back-phone.jpg) no-repeat; /* esse background aceita tanto colocar a imagem como a cor de fundo */
+    background:black url(../imagens/back-phone.jpg) no-repeat; /* esse background aceita tanto colocar a imagem como a cor de fundo */
     background-size: cover; /* p/ img caber na tela inteira*/
     background-position: center center; /*centraliza img*/
   

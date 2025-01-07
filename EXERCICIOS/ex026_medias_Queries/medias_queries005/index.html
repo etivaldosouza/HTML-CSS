@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="https://kit.fontawesome.com/9e018b46c9.js" origem cruzada="anônimo"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <i class="fa-solid fa-bars fa-2x" onclick="clickMenu()"></i>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+        <main>
+            <article>
+                <h2>Testando Media Queries</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis, non vitae veniam soluta nulla, iure, commodi delectus magnam incidunt hic expedita quibusdam labore accusantium beatae. Iure voluptatum debitis quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, minus deserunt. Amet mollitia eligendi consectetur, error commodi nostrum repellendus rem et odio atque delectus similique reprehenderit quis omnis. Asperiores, architecto.</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime et mollitia eos. Ullam blanditiis ipsa natus obcaecati animi. A facilis perspiciatis facere minus. Rem voluptatibus ut quibusdam suscipit reprehenderit ab Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente similique animi, ipsam accusantium enim dignissimos quis quibusdam quasi? Inventore ea temporibus ratione architecto quam laborum enim soluta cupiditate et sunt.</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, provident saepe dignissimos aperiam error facilis cupiditate repellendus cumque, ullam repellat assumenda iusto! Quidem dolores dolore numquam totam dolorem pariatur eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cupiditate fugiat eius, dolorum repellendus cum ab, consequuntur similique quaerat earum in voluptatum architecto assumenda nulla ratione sit sed? Ipsam, praesentium.</p>
+            </article>
+        </main>
+        <!--
+            FUNÇÃO JAVASCRIPT P/ OCULTAR E MOSTRAR MENU
+
+            se o menu estiver sendo mostrado, ao clicar ele irá ficar oculto(none) se ñ ou seja se ele ñ estiver sendo mostrado ao clicar, o menu irá aparecer
+
+        -->
+        <script>
+
+            function clickMenu() {
+                if (menu.style.display == 'block') {
+                    menu.style.display = 'none'                               
+                }
+                else {
+                    menu.style.display = 'block'
+                }
+            }
+
+       </script>
+</body>
+</html>

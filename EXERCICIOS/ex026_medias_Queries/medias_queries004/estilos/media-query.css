@@ -13,6 +13,40 @@ Grandes telas: @media screen and (min-width: 1200px)
 
 */
 
+/* VERSÃO P/IMPRESSÃO */
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+
+    }
+
+    main > h1 {
+        text-shadow: none;
+        color:black;
+    }
+
+    main::after {
+        content:'essa impressão foi feita por etivaldo souza';
+        text-decoration: overline; /* cria linha em cima do texto */
+       
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+
+
+
 /* TABLET */
 @media screen and (min-width:768px) and (max-width:992px) {
     body {

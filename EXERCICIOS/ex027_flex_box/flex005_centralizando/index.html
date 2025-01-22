@@ -21,20 +21,25 @@
             /*coloca os 2valores 100 para poder ficar centralizado*/
             height: 100vh; 
             width: 100vw;
-
+            
+            
             display: flex;/* começa informando logo ele. sempre no elemento pai(container) */
+            flex-flow: row nowrap; /* ja é o padrão,informei so pra fins didaticos para lembrar*/
             justify-content: center;
             align-items: center;
         }
 
         section {
+
             background-color: lightseagreen;
             height: 200px;
             width: 200px;
+            /* essa tag saction é pai em relação ao h1  por isso usei as config abaixo para centralizar o h1*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        h1 {
-            text-align: center;
-        }
+      
     </style>
 </head>
 <body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Item</title>
+
+    <style>
+        .container {
+            
+            background-color: blue;
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+        /*
+        
+            o tamanho do item, seja em altura(coluna) ou largura(em linha, por padrão assume o mesmo tamanho do conteudo(flex-basis: auto)
+
+        */
+        .item {
+
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px; /*valor padrão é auto*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- div PAI -->
+
+        <div class="item">A</div>
+        <div class="item">outro conteúdo</div>
+        <div class="item">C</div>
+        <div class="item">conteúdo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">conteúdo maior ainda,que vai ocupar mais espaço</div>        
+        <div class="item">G</div>
+
+    </div>
+</body>
+</html>

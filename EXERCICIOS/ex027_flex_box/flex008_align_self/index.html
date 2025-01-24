@@ -9,9 +9,11 @@
         .container {
             
             background-color: blue;
-
             display: flex;
             flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+            
             
         }
 
@@ -19,30 +21,38 @@
             background-color: aqua;
             border: 1px solid black;
             text-align: center;
-            padding: 20px; /* com esse valor ñ dá a distancia para fazer a quebra */
-        }
+            padding: 20px;
+            
+            
+           
+            
+            
 
+        }
+        /*
+        o align-self se aplica quando quero mexer apenas nos itens individualmente e o sentido sempre do cross-axis(eixo transversal)
+        */
         #A {
            
         }
 
         #B {
-            
+            align-self: auto; /*o auto herda a config do container(pai) que nesse caso ta config como align-items: flex-start */
         }
         #C{
-            
+           align-self: flex-end; 
         }
         #D {
             
         }
         #E{
-            
+            align-self: center;
         }
         #F {
-            
+            align-self: flex-start;
         }
         #G {
-            
+           align-self: stretch;  /*é o padrão. ocupa todo o tamanho do container no sentido do cross-axis*/
         }
 
     </style>

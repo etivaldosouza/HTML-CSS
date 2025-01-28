@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+header {
+    flex-flow: column nowrap;
+    
+    
+}
+
+nav {
+    flex-flow: column;
+    
+}
+
+header > h1 {
+    flex-basis: 50px; /* ajuste do tamanho do main-axis(eixo principal q no caso como ta colunm é altura*/
+    
+}
+
+header > nav > a {
+    width: 90vw;
+}

@@ -18,14 +18,46 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; /*contralização com relacao ao cross-axis(eixo-transv)*/
+    
 }
 
 header > h1 {
     border: 1px dotted black; /*dotted(pontilhado)*/
+    flex:0 0 200px;
+    
+
 }
 
 nav {
     border: 1px dotted black;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    
+    
+    
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .3s; /*ficar mais lenta a mudança de cor */
 }
 main {
     background-color: white;

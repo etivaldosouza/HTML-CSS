@@ -40,6 +40,9 @@ li {
 article {
 
     width: 600px;
+
+
+    
     
     display: block; /* combinação p/ deixar o article centralizado*/
     margin: auto;

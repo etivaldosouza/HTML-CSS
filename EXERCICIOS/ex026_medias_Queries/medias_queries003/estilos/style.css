@@ -21,10 +21,11 @@ h1 {
     color: white;
     text-shadow: 2px 2px 0px #1526a7; /* sombra */
     padding: 10px;
+    text-align: center;
 }
     /* Declarações Retrato */
 
-@media screen and(orientation:portrait) {
+    @media screen and (orientation:portrait) {
     
     body {
         background-image: url(../imagens/cev-portrait.jpg);
@@ -35,7 +36,7 @@ h1 {
 
     /* Declarações Paisagem */
 
-@media screen and(orientation:landscape) {
+    @media screen and (orientation:landscape) {
 
     body {
 

@@ -45,8 +45,6 @@ Grandes telas: @media screen and (min-width: 1200px)
 }
 
 
-
-
 /* TABLET */
 @media screen and (min-width:768px) and (max-width:992px) {
     body {
